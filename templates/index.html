@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion 데이터 조회</title>
+</head>
+
+<body>
+    <h1>📜 Notion 데이터베이스</h1>
+    <ul>
+        {% for item in items %}
+        <li>📌 {{ item.title }} - 📅 {{ item.date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
